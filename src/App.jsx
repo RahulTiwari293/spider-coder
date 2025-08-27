@@ -45,7 +45,7 @@ function App() {
           </p>
           <div className="flex space-x-10 mt-6">
             <a href="https://www.linkedin.com/in/rahul-tiwari-0280a2244" target="_blank" rel="noreferrer" className="text-red-400 border-b-2 border-red-500 hover:text-blue-400 font-bold text-lg">LinkedIn</a>
-            <a href="/" target="_blank" rel="noreferrer" className="text-blue-400 border-b-2 border-red-500 hover:text-red-400 font-bold text-lg">GitHub</a>
+            <a href="https://github.com/RahulTiwari293/" target="_blank" rel="noreferrer" className="text-blue-400 border-b-2 border-red-500 hover:text-red-400 font-bold text-lg">GitHub</a>
             <a href="mailto:rahul.tiwari@example.com" className="text-white border-b-2 border-blue-500 hover:text-red-400 font-bold text-lg">Email</a>
           </div>
         </div>
