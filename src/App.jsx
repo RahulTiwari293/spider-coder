@@ -29,7 +29,6 @@ function App() {
     <div className="min-h-screen w-full bg-gradient-to-br from-black via-red-900 to-blue-900 text-white font-sans relative overflow-x-hidden">
       {/* Optional Spiderman Web Overlay (you can use any semi-transparent PNG web) */}
       {/* <div className="fixed inset-0 z-0 pointer-events-none" style={{ background: "url('https://i.ibb.co/BPsmsCq/spiderman-web.png') repeat", opacity: 0.18 }} /> */}
-
       {/* Main Markee/Header */}
       <header className="w-full py-12 flex flex-col items-center justify-center relative z-10">
         <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
@@ -66,59 +65,64 @@ function App() {
       {/* Tech Creatives */}
       <section className="w-full max-w-6xl mx-auto flex flex-wrap gap-8 justify-center my-14 z-10 relative">
         <TechCard
-          title="React & UI Web"
-          accent="bg-blue-700 border-red-600"
-          icon="🕸️"
-          desc="Slinging modern interfaces with React, Vite, and Tailwind. Fast, stylish, responsive."
-        />
-        <TechCard
-          title="Blockchain"
+          title="Blockchain & Web3"
           accent="bg-red-700 border-blue-500"
           icon="🕷️"
-          desc="Smart contracts, DApps, Solidity, Ethereum — block by block (Spidey style)."
+          desc="Solidity, Hardhat, Ethers.js, decentralized storage, MetaMask, and robust smart contract development."
         />
         <TechCard
-          title="Game Dev"
-          accent="bg-gradient-to-r from-blue-900 to-pink-900 border-yellow-400"
-          icon="🎮"
-          desc="Level-up game development. Member of Solace Game Society. Comic-inspired fun!"
-        />
-        <TechCard
-          title="Leadership"
-          accent="bg-black border-red-500"
+          title="React & Modern UI"
+          accent="bg-blue-700 border-red-600"
           icon="🕸️"
-          desc="President, International Affairs Society – leading innovation and collaboration."
+          desc="Building fast and stylish interfaces with React, Vite, and Tailwind. Web3 wallet integration for a seamless UX."
         />
         <TechCard
-          title="Problem-Solving"
+          title="Decentralized Cloud"
+          accent="bg-gradient-to-r from-blue-900 to-pink-900 border-yellow-400"
+          icon="📂"
+          desc="Cloud-like apps with encrypted, distributed data—no centralized servers, just secure peer networks."
+        />
+        <TechCard
+          title="Testing & Security"
+          accent="bg-black border-red-500"
+          icon="🛡️"
+          desc="Hardhat test automation, contract audit, pinata/IPFS for safe, performant decentralized apps."
+        />
+        <TechCard
+          title="Teamwork & Leadership"
           accent="bg-gradient-to-r from-red-900 to-blue-900 border-purple-400"
-          icon="💡"
-          desc="Code optimization, DSA mastery, debugging — Spidey sense for sticky bugs!"
+          icon="🚀"
+          desc="President, International Affairs Society — collaboration, team mentoring, and agile project management."
         />
       </section>
 
       {/* Projects Marquee */}
       <section className="w-full my-10 py-6 bg-black bg-opacity-90 rounded-xl shadow-2xl z-10 relative">
         <marquee behavior="alternate" className="text-2xl text-white font-bold tracking-widest">
-          FEATURED PROJECTS: BLOCKCHAIN DAPP • GAME DEV • ALGORITHM CITY • FREELANCE SOLUTIONS • IAS LEADERSHIP
+          FEATURED PROJECTS: DECENTRALIZED GOOGLE DRIVE • SWAROJGAR DRAFT • BLOCKCHAIN SMART CONTRACTS
         </marquee>
         <div className="flex flex-wrap justify-center mt-8 gap-7">
           <ProjectCard
-            title="Web3 Portfolio"
+            title="Decentralized Google Drive"
             color="bg-[#be3144] border-2 border-blue-400"
-            desc="Smart contracts, tokens, and DApp showcases."
-            link="https://github.com/yourusername/blockchain-portfolio"
+            desc={
+              <>
+                A decentralized file storage DApp: files are split, encrypted, and distributed across multiple blockchain nodes.
+                Built with <b>Solidity</b>, <b>Hardhat</b>, <b>Ethers.js</b>, and <b>React</b>. Integrates MetaMask for wallet connectivity.
+              </>
+            }
+            link="https://github.com/RahulTiwari293/Decentralized-Google-Drive"
           />
           <ProjectCard
-            title="Spidey Game"
+            title="Swarojgar Draft 1"
             color="bg-[#21325e] border-2 border-red-400"
-            desc="A web game with interactive, comic-inspired gameplay."
-            link="https://github.com/yourusername/game-projects"
+            desc="Draft and prototype for an employment/self-reliance platform. Technologies and vision in early development."
+            link="https://github.com/RahulTiwari293/swarojgardraft1"
           />
           <ProjectCard
             title="Algorithm City"
             color="bg-gradient-to-r from-[#3a4750] to-[#303841] border-2 border-yellow-400"
-            desc="C++/Python DSA, debugging, and more."
+            desc="C++/Python DSA, debugging, and competitive programming for efficient, optimized solutions."
             link="https://github.com/yourusername/algorithms"
           />
         </div>
@@ -139,5 +143,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
